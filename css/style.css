@@ -11,6 +11,19 @@
 *	Edit this section
 *
 * ======================================================= */
+@media (max-width: 767px) {
+  .project-container {
+      display: flex;
+      justify-content: center;
+      margin-left: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+      margin-left: 7px;
+  }
+}
 
 .projects-thumb .popup-image {
   display: block;
@@ -26,6 +39,43 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+.projects-tag{
+  display: block;
+  margin-left: 100px;
+}
+.projects-tag-Pega{
+  display: block;
+  margin-left: 120px;
+}
+.projects-tag-LinkedIn{
+  display: block;
+  margin-left: 115px;
+}
+.projects-title{
+  display: block;
+  margin-left: 65px;
+}
+.projects-title-Associate{
+  display: block;
+  margin-left: 35px;
+}
+.projects-title-Data-Analyst{
+  display: block;
+  margin-left: 100px;
+}
+.projects-title-Pega-Decisioning-Consultant{
+  display: block;
+  margin-left: 20px;
+}
+.projects-title-Pega-System-Architect{
+  display: block;
+  margin-left: 40px;
+}
+
+
+.certificate-link {
+  margin-left: 70px;
 }
 
 .projects-image {
@@ -48,6 +98,36 @@
   color: #0077b5;
   /* LinkedIn color */
 }
+
+.social-icon-LinkedIn:hover,
+.social-icon-Github:hover,
+.social-icon-Gmail:hover,
+.social-icon-whatsapp:hover {
+    transform: scale(2); /* Increase the size of the icon on hover */
+}
+.social-icon-LinkedIn,
+.social-icon-Github,
+.social-icon-Gmail,
+.social-icon-whatsapp {
+    display: inline-block;
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the right margin as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {  
+  .social-icon-LinkedIn,
+  .social-icon-Github,
+  .social-icon-Gmail,
+  .social-icon-whatsapp {
+      display: inline-block; /* Display icons inline */
+      margin: 0 5px; /* Add equal horizontal margin between icons */
+  }
+}
+
 
 .social-links {
   margin-top: 20px;
@@ -467,7 +547,8 @@ body.offcanvas {
   width: 100%;
   display: block;
   background: linear-gradient(to bottom, #e0f4f8, #ffffff);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);}
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.9s;}
   @media screen and (max-width: 768px) {
     .colorlib-experience,
     .colorlib-skills,
@@ -499,7 +580,8 @@ body.offcanvas {
     display: block; }
   @media screen and (max-width: 768px) {
     .colorlib-heading {
-      margin-bottom: 3em; } }
+      margin-bottom: 3em;
+      text-align: center; } }
 
 .heading-meta {
   margin-bottom: 15px;
@@ -520,7 +602,26 @@ body.offcanvas {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 500; }
+  
+  @media screen and (max-width: 767px) {
+    .mobile-text {
+        display: block;
+    }
+    p1, p2 {
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) {
+    .mobile-text {
+        display: inline;
+    }
+    p1, p2 {
+        display: inline;
+    }
+}
 
+
+  
 .hire {
   padding: 2em;
   background: #f9bf3f; }
@@ -682,7 +783,7 @@ body.offcanvas {
   margin-top: 15px; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
-  font-size: 28px;
+  font-size: 23px;
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 500; }
 
@@ -830,7 +931,8 @@ body.offcanvas {
 .progress-wrap h3 {
   font-size: 16px;
   font-family: "Quicksand", Arial, sans-serif;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;}
+
 
 .progress {
   height: 6px;
@@ -838,16 +940,34 @@ body.offcanvas {
   box-shadow: none;
   background: #f2f3f7;
   overflow: visible; 
-margin-bottom: 30px;}
+  margin-bottom: 30px;
+  animation: fadeIn 2s ease;}
 
 
-
-.progress-name,
+.progress-name{
+  position: absolute;
+  top: -20px; /* Adjust the distance from the progress bar */
+  font-size: 12px;
+  font-weight: bold;
+  animation: fadeIn 2s ease;
+}
 .progress-value {
   position: absolute;
   top: -20px; /* Adjust the distance from the progress bar */
   font-size: 12px;
   font-weight: bold;
+  animation: fadeIn 2s ease; /* Animation with a duration of 2 seconds */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); /* Initial position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(1000); /* Final position */
+  }
 }
   
 .progress-name {
@@ -998,7 +1118,15 @@ margin-bottom: 30px;}
     @media screen and (max-width: 1200px) {
       .colorlib-feature.colorlib-feature-sm .colorlib-icon i {
         font-size: 28px; } }
+    
+        @media screen and (max-width: 767px) {
+          .colorlib-feature-sm {
+            display: none; /* Hide the elements with the class colorlib-feature-sm */
+          }
+        }
+        
 
+        
 .blog-entry {
   width: 100%;
   float: left;
