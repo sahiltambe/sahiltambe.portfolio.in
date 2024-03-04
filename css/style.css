@@ -41,6 +41,7 @@
       display: flex;
       justify-content: center;
       text-align: center;
+      margin-bottom: 30px;
   }
 }
 
@@ -146,19 +147,6 @@
   }
 }
 
-
-/* certifications-thumb
-certifications-info
-certifications-tag
-certifications-title
-popup-image
-certificate-link */
-
-/* @media (max-width: 767px) {
-  .certifications{
-      text-align: center;
-  }
-} */
 
 .certifications-thumb .popup-image .certifications-tag{
   display: block;
