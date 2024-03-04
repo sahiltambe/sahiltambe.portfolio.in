@@ -34,8 +34,6 @@
   cursor: pointer;
 }
 
-
-
 @media (max-width: 768px) {
   .certifications-container {
       display: flex;
@@ -198,6 +196,61 @@
 
 .certificate-link {
   margin-left: 70px;
+}
+
+@media (max-width: 767px) {
+  .certifications-tag {
+      text-align: center;
+      margin-right: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .certifications-tag-Pega{
+      text-align: center;
+      margin-right: 110px;
+  }
+}
+@media (max-width: 767px) {
+  .certifications-tag-LinkedIn{
+      text-align: center;
+      margin-right: 110px;
+  }
+}
+
+@media (max-width: 767px) {
+  .certifications-title{
+      text-align: center;
+      margin-right: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .certifications-title-Associate{
+      text-align: center;
+      margin-right: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .certifications-title-Data-Analyst{
+      text-align: center;
+      margin-right: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .certifications-title-Pega-Decisioning-Consultant{
+      text-align: center;
+      margin-right: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .certifications-title-Pega-System-Architect{
+      text-align: center;
+      margin-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .certificate-link{
+      margin-right: 65px ;
+  }
 }
 
 .projects-image {
@@ -1057,6 +1110,10 @@ body.offcanvas {
   font-family: "Quicksand", Arial, sans-serif;
   margin-bottom: 40px;}
 
+  @media screen and (max-width: 768px) {
+    .progress-wrap h3 {
+      margin-left: 5px; } }
+
 
 .progress {
   height: 6px;
@@ -1075,6 +1132,9 @@ body.offcanvas {
   font-weight: bold;
   animation: fadeIn 2s ease;
 }
+@media screen and (max-width: 768px) {
+  .progress-name {
+    margin-left: 5px; } }
 .progress-value {
   position: absolute;
   top: -20px; /* Adjust the distance from the progress bar */
