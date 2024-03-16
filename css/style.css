@@ -15,8 +15,33 @@
 /*--------------------------------------------------------------
 # 
 --------------------------------------------------------------*/
+.spacer {
+  /* Add space between "segments" and "and" */
+  margin-right: 2px; /* Adjust as needed */
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 786px) {
+  .spacer {
+      /* Adjust spacing for mobile */
+      margin-right: 1px; /* Adjust as needed */
+  }
+}
 
 
+
+.bullet-list li {
+    text-indent: -1em; /* Adjust as needed */
+    margin-left: 0.5em; 
+}
+
+.bullet-list li::before {
+    content: "•";
+    display: inline-block;
+    width: -5em; /* Adjust as needed */
+    margin-left: 1em; /* Adjust as needed */
+    margin-right: 0.5em; /* Adjust as needed */
+}
 
 /*--------------------------------------------------------------
 # Back to top button
