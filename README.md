@@ -39,10 +39,10 @@ This is an all-inclusive portfolio website that showcases my knowledge base, pro
 
 ## Sneak Peek
 
-Check out my portfolio website <a href="https://sahiltambe.github.io/sahiltambe.portfolio.in/" target="_blank">[here]</a>.
+Check out my portfolio website <a href="https://sahiltambe.github.io/sahiltambe.portfolio.in/" target="_blank">here</a>.
 
 
 ## Connect
 
-Thanks for visiting my portfolio site! If you have questions, want to team up, or just say hi, email me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sahiltambe1996@gmail.com" target="_blank">sahiltambe1996@gmail</a> or connect through <a href="https://www.linkedin.com/in/sahil-tambe-2b5b14165/" target="_blank">[LinkedIn]</a>.
+Thanks for visiting my portfolio site! If you have questions, want to team up, or just say hi, email me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sahiltambe1996@gmail.com" target="_blank">sahiltambe1996@gmail</a> or connect through <a href="https://www.linkedin.com/in/sahil-tambe-2b5b14165/" target="_blank">LinkedIn</a>.
 
