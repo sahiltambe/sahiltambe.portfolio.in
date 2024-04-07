@@ -1,13 +1,13 @@
-Hello there! I warmly welcome you to my portfolio website, Sahil Tambe here and I am delighted to share with you my professional journey and achievements in technology. The main purpose for this platform is to give you a clear understanding of the skills that I have got, the experiences gained and projects undertaken.
+Hello there! I warmly welcome you to my portfolio website, Sahil Tambe here and I am delighted to share with you my professional journey and achievements in technology. The main purpose of this platform is to give you a clear understanding of the skills that I have got, the experiences gained and the projects undertaken.
 
 Overview
 
 Job Skills
 
-Programming Languages: Advanced in Python, HTML, CSS.
-Frameworks & Tools: Experience with Flask, Tensor flow, Dockers CI/CD pipelines.
+Programming Languages: Advanced in Python, HTML, and CSS.
+Frameworks & Tools: Experience with Flask, Tensorflow, and Dockers CI/CD pipelines.
 Database Management: Skillful in MySQL, Cassandra DB and ChromaDB.
-AI/ML Techniques: Pro at Machine Learning (ML), Deep Learning (DL), Fine-Tuning with custom data(NLP) Natural Language Processing (NLP), MLOPS (Machine Learning Operations).
+AI/ML Techniques: Pro at Machine Learning (ML), Deep Learning (DL), Fine-Tuning with Custom Data (NLP) Natural Language Processing (NLP), MLOPS (Machine Learning Operations).
 Generative AI Technologies: Well-informed about LangChain; LlamaIndex; Llama2; OpenAI; Google Gemini Pro.
 Deployment Platforms: Familiarity with AWS Bedrock; EC2; Lambda Azure Functions Hugging Face.
 Soft Skills: Analytical thinking Problem-solving Teamwork Effective communication.
