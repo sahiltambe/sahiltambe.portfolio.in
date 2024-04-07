@@ -39,8 +39,7 @@ This is an all-inclusive portfolio website that showcases my knowledge base, pro
 
 ## Sneak Peek
 
-Check out my portfolio website <a href="https://sahiltambe.github.io/sahiltambe.portfolio.in/" target="_blank">here</a>.
-
+Check out my portfolio website [here](https://sahiltambe.github.io/sahiltambe.portfolio.in/).
 
 ## Connect
 
