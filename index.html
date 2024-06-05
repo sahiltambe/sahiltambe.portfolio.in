@@ -52,6 +52,35 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+        /* Chatbot popup styling */
+        #chatbotPopup {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: 1px solid #ccc;
+            z-index: 9999;
+            background-color: white;
+            width: 300px;
+            height: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #chatbotHeader {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #chatbotBody {
+            padding: 10px;
+            height: 340px; /* Adjust as needed */
+            overflow-y: scroll; /* Enable scrolling */
+        }
+    </style>
 </head>
 
 <body>
@@ -82,6 +111,21 @@
 							<li><a href="#" data-nav-section="contact">Contact</a></li>
 						</ul>
 					</div>
+					<!-- Chatbot Popup -->
+					<div id="chatbotPopup">
+						<div id="chatbotHeader">
+							Chatbot <i class="bi bi-x-circle" id="closeChatbotBtn" style="float: right; cursor: pointer;"></i>
+						</div>
+						<div id="chatbotBody">
+							<iframe src="https://insightful-q-a-chatbot.streamlit.app/" width="100%" height="100%" frameborder="0"></iframe>
+						</div>
+					</div>
+
+					<!-- Button to open chatbot popup -->
+					
+					<!-- <div id="chatbotButton" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
+						<button onclick="toggleChatbot()">ChatBot</button>
+					</div> -->
 				</nav>
 				<footer class="colorlib-footer">
 					<p><small> Copyright @
@@ -125,10 +169,16 @@
 														</div>
 													</h2>
 													<p>
-														<a download="" href="assets/pdf/Sahil_Tambe_Resume.pdf"
-															class="btn btn-primary btn-learn">
-															Download CV <i class="icon-download4"></i>
-														</a>
+														<a download=""
+                                                            href="assets/pdf/Sahil_Tambe_Resume.pdf"
+                                                            class="btn btn-primary btn-learn">
+                                                            Download CV <i class="icon-download4"></i>
+                                                        </a>
+                                                        <a download=""
+                                                            href="https://insightful-q-a-chatbot.streamlit.app/"
+                                                            target="_blank" class="btn btn-primary btn-learn">                                                            
+                                                            Know Me Better
+                                                        </a>
 													</p>
 													<p>
 														<a href="https://www.linkedin.com/in/sahil-tambe-2b5b14165/"
@@ -1187,6 +1237,56 @@
 			window.open(imagePath, '_blank', 'width=600,height=400');
 		}
 	</script>
+	<script>
+		// Function to toggle chatbot popup
+		function toggleChatbot() {
+			var chatbotPopup = document.getElementById("chatbotPopup");
+			if (chatbotPopup.style.display === "block") {
+				chatbotPopup.style.display = "none";
+			} else {
+				chatbotPopup.style.display = "block";
+			}
+		}
+	
+		// Function to close chatbot popup
+		document.getElementById("closeChatbotBtn").onclick = function () {
+			document.getElementById("chatbotPopup").style.display = "none";
+		};
+	
+		// Show/hide chatbot button based on scroll position
+		var lastScrollTop = 0; // Variable to store last scroll position
+		var chatbotButton = document.getElementById("chatbotButton");
+		var homeSection = document.getElementById("colorlib-hero");
+		var offsetTop = homeSection.getBoundingClientRect().top;
+	
+		window.addEventListener('scroll', function () {
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	
+			if (scrollTop > lastScrollTop && offsetTop < 0) {
+				// Downscroll and home section is not fully visible
+				chatbotButton.style.display = 'none';
+			} else {
+				// Upscroll or home section is fully visible
+				chatbotButton.style.display = 'block';
+			}
+			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+		});
+	
+		// Initial check to show/hide chatbot button
+		window.addEventListener('load', function () {
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+	
+			if (scrollTop > lastScrollTop && offsetTop < 0) {
+				// Downscroll and home section is not fully visible
+				chatbotButton.style.display = 'none';
+			} else {
+				// Upscroll or home section is fully visible
+				chatbotButton.style.display = 'block';
+			}
+			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+		});
+	</script>
+	
 
 </body>
 
